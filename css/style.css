@@ -1,0 +1,30 @@
+/* css/style.css */
+
+/* UTILITIES */
+@import url('./utilities/_reset.css');
+@import url('./utilities/_variables.css');
+
+/* LAYOUTS */
+@import url('./layouts/_grid.css');
+
+/* MODULES/COMPONENTS */
+@import url('./modules/_header.css');
+@import url('./modules/_button.css');
+@import url('./modules/_form.css');
+@import url('./modules/_card.css');
+@import url('./modules/_badge.css');
+
+/* BASE STYLES */
+footer {
+    grid-column: 1 / -1;
+    background-color: var(--color-neutral-dark);
+    color: var(--color-neutral-light);
+    text-align: center;
+    padding: var(--space-3);
+    margin-top: var(--space-6);
+}
+
+    footer p {
+        margin: 0.5rem 0;
+        font-size: var(--font-size-sm);
+    }

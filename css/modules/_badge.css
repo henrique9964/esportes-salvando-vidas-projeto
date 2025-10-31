@@ -1,0 +1,22 @@
+/* css/modules/_badge.css */
+
+.badge {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    border-radius: 9999px; /* Formato de "pill" ou tag */
+    margin-left: var(--space-1);
+}
+
+.badge-impacto {
+    color: var(--color-neutral-dark);
+    background-color: var(--color-impacto);
+}
+
+.badge-voluntario {
+    color: var(--color-neutral-white);
+    background-color: var(--color-secondary-500);
+}

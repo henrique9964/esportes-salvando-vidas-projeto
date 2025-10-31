@@ -1,0 +1,88 @@
+﻿/* css/layouts/_grid.css */
+
+/* ======================================= */
+/* CONFIGURAÇÃO BASE DO GRID (12 COLUNAS) */
+/* ======================================= */
+
+.grid-container {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: var(--space-4) 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--space-3);
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+/* ======================================= */
+/* 📱 BREAKPOINTS RESPONSIVOS (5 MÍNIMOS) */
+/* ======================================= */
+
+/* 2. SMALL (sm): Telas maiores que 576px */
+@media screen and (min-width: 576px) {
+    .col-sm-6 {
+        grid-column: span 6;
+    }
+}
+
+/* 3. MEDIUM (md): Telas maiores que 768px (Tablets) */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        gap: var(--space-4);
+    }
+
+    .pilares-cards > article {
+        grid-column: span 4;
+    }
+
+    .col-md-3 {
+        grid-column: span 3;
+    }
+
+    .col-md-4 {
+        grid-column: span 4;
+    }
+
+    .col-md-6 {
+        grid-column: span 6;
+    }
+}
+
+/* 4. LARGE (lg): Telas maiores que 992px (Desktops Médios) */
+@media screen and (min-width: 992px) {
+    .destaque-missao {
+        grid-column: span 8;
+    }
+
+    .resultados-aside {
+        grid-column: span 4;
+    }
+
+    .col-lg-3 {
+        grid-column: span 3;
+    }
+
+    .col-lg-4 {
+        grid-column: span 4;
+    }
+
+    .col-lg-6 {
+        grid-column: span 6;
+    }
+
+    .col-lg-8 {
+        grid-column: span 8;
+    }
+}
+
+/* 5. EXTRA LARGE (xl): Telas maiores que 1200px (Desktops Grandes) */
+@media screen and (min-width: 1200px) {
+    .grid-container {
+        max-width: 1400px;
+        gap: var(--space-6);
+    }
+}
